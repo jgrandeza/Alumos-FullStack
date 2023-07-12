@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  jeancarlos.grandezaguilar.alumnos.services:
+    image: ${DOCKER_REGISTRY-}jeancarlosgrandezaguilaralumnos
+    build:
+      context: .
+      dockerfile: Backend/Domain/Escuela/jeancarlos.grandezaguilar.alumnos.services/Dockerfile
+    ports:
+      - 8082:80
+      - 8083:443
+    networks:
+      - backend
+  jeancarlos.grandezaguilar.security.services:
+    image: ${DOCKER_REGISTRY-}jeancarlosgrandezaguilarsecurity
+    build:
+      context: .
+      dockerfile: Backend/Infrastructure/Security/jeancarlos.grandezaguilar.security.services/Dockerfile
+    ports:
+      - 8084:80
+      - 8085:443
+    networks:
+      - backend
+networks:
+  backend:
+    name: backend
+    driver: bridge
+
