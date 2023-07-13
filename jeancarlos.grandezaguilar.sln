@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1706.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{EAD40572-9AEE-4043-8B4F-ECCCA90267DF}"
 EndProject
@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D4BB0C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Escuela", "Escuela", "{1E6D7AD3-745C-474C-B83E-791CDA57ACA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jeancarlos.grandezaguilar.alumnos.services", "Backend\Domain\Escuela\jeancarlos.grandezaguilar.alumnos.services\jeancarlos.grandezaguilar.alumnos.services.csproj", "{9C78A492-F439-441D-9212-51EEED8A55B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jeancarlos.grandezaguilar.alumnos.services", "Backend\Domain\Escuela\jeancarlos.grandezaguilar.alumnos.services\jeancarlos.grandezaguilar.alumnos.services.csproj", "{9C78A492-F439-441D-9212-51EEED8A55B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9C6CF5EB-9166-4E27-BD6A-F357A36F27B1}"
 EndProject
@@ -19,9 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{81
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keycloak", "Keycloak", "{8B57E813-207E-47CD-BF9C-E7FB0B91A798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jeancarlos.grandezaguilar.security.services", "Backend\Infrastructure\Security\jeancarlos.grandezaguilar.security.services\jeancarlos.grandezaguilar.security.services.csproj", "{F6EB5D44-5F9C-478F-AFCD-700E9BFBADE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jeancarlos.grandezaguilar.security.services", "Backend\Infrastructure\Security\jeancarlos.grandezaguilar.security.services\jeancarlos.grandezaguilar.security.services.csproj", "{F6EB5D44-5F9C-478F-AFCD-700E9BFBADE8}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{480A50A5-AF56-4F74-8E85-979EDF545AC5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Escuela.Db", "Backend\Infrastructure\Database\Escuela.Db\Escuela.Db.sqlproj", "{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +43,15 @@ Global
 		{480A50A5-AF56-4F74-8E85-979EDF545AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{480A50A5-AF56-4F74-8E85-979EDF545AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{480A50A5-AF56-4F74-8E85-979EDF545AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {277E7B53-1ECC-4684-BA22-AABB15DE5F47}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D4BB0CD0-0CCD-40C0-A2AC-436C4EF755D7} = {EAD40572-9AEE-4043-8B4F-ECCCA90267DF}
@@ -57,5 +62,9 @@ Global
 		{81D771E1-D912-4CC1-9E96-AA76D1B62EDB} = {9C6CF5EB-9166-4E27-BD6A-F357A36F27B1}
 		{8B57E813-207E-47CD-BF9C-E7FB0B91A798} = {81D771E1-D912-4CC1-9E96-AA76D1B62EDB}
 		{F6EB5D44-5F9C-478F-AFCD-700E9BFBADE8} = {81D771E1-D912-4CC1-9E96-AA76D1B62EDB}
+		{0FF6096E-41DF-403E-A328-F3FE98D8AB4E} = {6957D9B4-B2DB-4DCD-874D-292FAF2D3C7C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {277E7B53-1ECC-4684-BA22-AABB15DE5F47}
 	EndGlobalSection
 EndGlobal

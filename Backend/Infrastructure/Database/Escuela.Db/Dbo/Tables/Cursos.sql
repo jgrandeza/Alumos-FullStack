@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Cursos]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)
