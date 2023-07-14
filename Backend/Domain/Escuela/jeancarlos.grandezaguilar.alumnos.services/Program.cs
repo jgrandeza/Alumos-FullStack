@@ -2,7 +2,7 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
-string connectionString = builder.Configuration.GetConnectionString("LibraryConnectionString");
+string connectionString = builder.Configuration.GetConnectionString("EscuelaConnectionString");
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
